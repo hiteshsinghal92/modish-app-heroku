@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { NavLink } from 'react-router-dom'
 export default function Footer() {
     return (
         <>
@@ -19,11 +19,11 @@ export default function Footer() {
                                         <strong>Email:</strong> info@example.com<br />
                                     </p>
                                     <div className="social-links mt-3">
-                                        <a href="#" className="twitter"><i className="bx bxl-twitter"></i></a>
-                                        <a href="#" className="facebook"><i className="bx bxl-facebook"></i></a>
-                                        <a href="#" className="instagram"><i className="bx bxl-instagram"></i></a>
-                                        <a href="#" className="google-plus"><i className="bx bxl-skype"></i></a>
-                                        <a href="#" className="linkedin"><i className="bx bxl-linkedin"></i></a>
+                                        <NavLink to="#" className="twitter"><i className="bx bxl-twitter"></i></NavLink>
+                                        <NavLink to="#" className="facebook"><i className="bx bxl-facebook"></i></NavLink>
+                                        <NavLink to="#" className="instagram"><i className="bx bxl-instagram"></i></NavLink>
+                                        <NavLink to="#" className="google-plus"><i className="bx bxl-skype"></i></NavLink>
+                                        <NavLink to="#" className="linkedin"><i className="bx bxl-linkedin"></i></NavLink>
                                     </div>
                                 </div>
                             </div>
@@ -31,22 +31,22 @@ export default function Footer() {
                             <div className="col-lg-2 col-md-6 footer-links">
                                 <h4>Useful Links</h4>
                                 <ul>
-                                    <li><i className="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                                    <li><i className="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-                                    <li><i className="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-                                    <li><i className="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-                                    <li><i className="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
+                                    <li><i className="bx bx-chevron-right"></i> <NavLink to="#">Home</NavLink></li>
+                                    <li><i className="bx bx-chevron-right"></i> <NavLink to="#">About us</NavLink></li>
+                                    <li><i className="bx bx-chevron-right"></i> <NavLink to="#">Services</NavLink></li>
+                                    <li><i className="bx bx-chevron-right"></i> <NavLink to="#">Terms of service</NavLink></li>
+                                    <li><i className="bx bx-chevron-right"></i> <NavLink to="#">Privacy policy</NavLink></li>
                                 </ul>
                             </div>
 
                             <div className="col-lg-2 col-md-6 footer-links">
                                 <h4>Our Services</h4>
                                 <ul>
-                                    <li><i className="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-                                    <li><i className="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-                                    <li><i className="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-                                    <li><i className="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-                                    <li><i className="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
+                                    <li><i className="bx bx-chevron-right"></i> <NavLink to="#">Web Design</NavLink></li>
+                                    <li><i className="bx bx-chevron-right"></i> <NavLink to="#">Web Development</NavLink></li>
+                                    <li><i className="bx bx-chevron-right"></i> <NavLink to="#">Product Management</NavLink></li>
+                                    <li><i className="bx bx-chevron-right"></i> <NavLink to="#">Marketing</NavLink></li>
+                                    <li><i className="bx bx-chevron-right"></i> <NavLink to="#">Graphic Design</NavLink></li>
                                 </ul>
                             </div>
 
@@ -69,13 +69,13 @@ export default function Footer() {
       </div>
                     <div className="credits">
 
-                        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                        Designed by <NavLink to="https://bootstrapmade.com/">BootstrapMade</NavLink>
                     </div>
                 </div>
             </footer>
 
             <div id="preloader"></div>
-            <a href="#" className="back-to-top d-flex align-items-center justify-content-center"><i className="bi bi-arrow-up-short"></i></a>
+            <NavLink to="#" className="back-to-top d-flex align-items-center justify-content-center"><i className="bi bi-arrow-up-short"></i></NavLink>
 
         </>
     )
