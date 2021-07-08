@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react'
+import { NavLink} from 'react-router-dom';
 
 export default function Servicehome() {
     const [error, setError] = useState(null);
@@ -13,7 +14,7 @@ export default function Servicehome() {
             .then(res => res.json())
             .then(
                 (result) => {
-                    console.log(result);
+                   // console.log(result);
                     setIsLoaded(true);
                     setItems(result);
                 },
@@ -36,7 +37,7 @@ export default function Servicehome() {
         return (
             <div>
                 <section id="services" className="services">
-                    <div className="container" data-aos="fade-up">
+                    <div className="container">
 
                         <div className="section-title">
                             <h2>Services</h2>
@@ -44,16 +45,19 @@ export default function Servicehome() {
                         </div>
 
                         <div className="row">
-                        {items.map(item => (
+                            {items.map(item => (
 
-                      
-                            <div className="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-                                <div className="icon-box">
-                                    <div className="icon"><i className="bx bxl-dribbble"></i></div>
-                                    <h4><a href="">{item.title}</a></h4>
-                                    <div dangerouslySetInnerHTML={{__html:item.tag_line}}></div>
+
+                                <div className="col-lg-4 col-md-6 d-flex align-items-stretch" key={item.id} >
+                                   
+                                        <div className="icon-box">
+                                            <div className="icon"><i className="bx bxl-dribbble"></i></div>
+                                            <h4><NavLink to={`/services/${item.slug}`}>{item.title}</NavLink></h4>
+                                            <div dangerouslySetInnerHTML={{ __html: item.tag_line }}></div>
+                                        </div>
+                            
                                 </div>
-                            </div>
+
 
                             ))}
 

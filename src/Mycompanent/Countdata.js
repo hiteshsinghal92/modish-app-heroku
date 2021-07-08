@@ -4,7 +4,7 @@ export default function Countdata() {
     return (
         <div>
             <section id="counts" className="counts">
-                <div className="container" data-aos="fade-up">
+                <div className="container">
 
                     <div className="row no-gutters">
 

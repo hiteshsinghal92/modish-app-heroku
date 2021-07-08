@@ -5,7 +5,7 @@ export default function Whyus() {
     return (
         <div>
             <section id="why-us" className="why-us section-bg">
-                <div className="container-fluid" data-aos="fade-up">
+                <div className="container-fluid" >
 
                     <div className="row">
 

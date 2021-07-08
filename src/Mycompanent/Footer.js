@@ -74,7 +74,7 @@ export default function Footer() {
                 </div>
             </footer>
 
-            <div id="preloader"></div>
+            {/* <div id="preloader"></div> */}
             <NavLink to="#" className="back-to-top d-flex align-items-center justify-content-center"><i className="bi bi-arrow-up-short"></i></NavLink>
 
         </>

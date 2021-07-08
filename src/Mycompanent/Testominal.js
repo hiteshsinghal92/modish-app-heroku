@@ -4,14 +4,14 @@ export default function Testominal() {
     return (
         <div>
             <section id="testimonials" className="testimonials section-bg">
-                <div className="container" data-aos="fade-up">
+                <div className="container" >
 
                     <div className="section-title">
                         <h2>Testimonials</h2>
                         <p>Testimonials</p>
                     </div>
 
-                    <div className="testimonials-slider swiper-container" data-aos="fade-up" data-aos-delay="100">
+                    <div className="testimonials-slider swiper-container">
                         <div className="swiper-wrapper">
 
                             <div className="swiper-slide">
